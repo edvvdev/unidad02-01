@@ -18,6 +18,10 @@ class Settings:
     text_column: str = os.getenv("TEXT_COLUMN", "text")
     target_column: str = os.getenv("TARGET_COLUMN", "label")
     random_state: int = int(os.getenv("RANDOM_STATE", "42"))
+    dataset_name: str = os.getenv("DATASET_NAME", "")
+    dataset_page: str = os.getenv("DATASET_PAGE", "")
+    dataset_license: str = os.getenv("DATASET_LICENSE", "")
+    dataset_sha256: str = os.getenv("DATASET_SHA256", "")
 
 
 settings = Settings()
