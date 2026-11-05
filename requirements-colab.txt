@@ -1,0 +1,12 @@
+gensim
+joblib
+matplotlib
+networkx
+numpy
+pandas
+python-dotenv
+requests
+scikit-learn
+seaborn
+streamlit
+pytest

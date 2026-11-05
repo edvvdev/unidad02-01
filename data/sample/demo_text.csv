@@ -1,0 +1,19 @@
+text,label
+"Excelente servicio y atención rápida",positive
+"El proceso fue claro y eficiente",positive
+"Muy buena experiencia con el equipo",positive
+"La respuesta llegó a tiempo",positive
+"Recomiendo ampliamente este servicio",positive
+"Todo funcionó correctamente",positive
+"El servicio fue lento y confuso",negative
+"Nunca recibí una respuesta",negative
+"La atención fue deficiente",negative
+"El proceso presentó demasiados errores",negative
+"No recomiendo este servicio",negative
+"La experiencia fue frustrante",negative
+"La solicitud está en revisión",neutral
+"El sistema registró la operación",neutral
+"La reunión será mañana",neutral
+"El expediente fue recibido",neutral
+"El resultado todavía no está disponible",neutral
+"La actualización terminó a las ocho",neutral
