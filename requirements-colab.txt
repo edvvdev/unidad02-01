@@ -1,3 +1,9 @@
+# Dependencias para ejecutar el ejercicio en Google Colab.
+# No se copia la carpeta .venv: Colab instala sus propias versiones.
+# Instale con:  !pip install -r requirements-colab.txt
+# En Colab agregue la carpeta src al PYTHONPATH antes de importar el paquete:
+#   import sys; sys.path.insert(0, "/content/rutas/INF8239_U02_NLP/src")
+# y descargue el corpus con scripts/download_data.py (el .env no viaja en Git).
 gensim
 joblib
 matplotlib
