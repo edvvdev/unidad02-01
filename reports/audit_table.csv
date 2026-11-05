@@ -1,0 +1,4 @@
+columna,tipo,filas,no_nulos,nulos,valores_unicos,ejemplo
+sentence,object,3000,3000,0,2982,"A very, very, very slow-moving, aimless movie about a distressed, drifting young man."
+score,int64,3000,3000,0,2,0
+source,object,3000,3000,0,3,imdb

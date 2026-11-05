@@ -1,0 +1,4 @@
+modelo,nombre,f1_macro,accuracy,precision_macro,recall_macro,filas_prueba,seleccionado
+naive_bayes,Complement Naive Bayes,0.833737,0.83378,0.834126,0.83378,746,True
+logistic,Regresion logistica con TF-IDF,0.81367,0.813673,0.813693,0.813673,746,False
+dummy,DummyClassifier (linea base),0.333333,0.5,0.25,0.5,746,False

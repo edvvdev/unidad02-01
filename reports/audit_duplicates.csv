@@ -1,0 +1,19 @@
+sentence,occurrences,scores,sources,conflicting_label
+Definitely worth checking out.,2,1,imdb,False
+Very disappointing.,2,0,amazon_cells|imdb,False
+10/10,2,1,imdb,False
+Not recommended.,2,0,imdb,False
+Works great!.,2,1,amazon_cells,False
+"If you like a loud buzzing to override all your conversations, then this phone is for you!",2,0,amazon_cells,False
+Don't buy this product.,2,0,amazon_cells,False
+Great phone!.,2,1,amazon_cells,False
+Works great.,2,1,amazon_cells,False
+Great Phone.,2,1,amazon_cells,False
+This is a great deal.,2,1,amazon_cells,False
+Excellent product for the price.,2,1,amazon_cells,False
+Does not fit.,2,0,amazon_cells,False
+Great phone.,2,1,amazon_cells,False
+I love this place.,2,1,yelp,False
+I won't be back.,2,0,yelp,False
+The food was terrible.,2,0,yelp,False
+I would not recommend this place.,2,0,yelp,False

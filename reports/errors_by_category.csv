@@ -1,0 +1,18 @@
+category,category_description,errores,porcentaje
+senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,37,29.84
+hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,18,14.52
+contraste,Contraste explicito entre una valoracion positiva y otra negativa,12,9.68
+negacion,Negacion explicita que invierte o matiza el sentimiento,12,9.68
+comparacion,"Comparacion explicita entre productos, peliculas o relaciones",8,6.45
+hiperbole,Exageracion o intensificacion del juicio,6,4.84
+dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",6,4.84
+texto_corto,Texto demasiado corto para una inferencia fiable,5,4.03
+condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente",3,2.42
+enfasis_mayusculas,"Enfasis por mayusculas, tipico de-intensity o de rechazo",3,2.42
+multiples_aspectos,Menciona varios aspectos evaluables del producto o del servicio,3,2.42
+experiencia_personal,Relato en primera persona con vivencia concreta,3,2.42
+formato_precios,"Menciones de precio, envio o compra",3,2.42
+duda_hedging,Incertidumbre o matiz del autor sobre su juicio,2,1.61
+etiqueta_discutible,Presencia simultanea de indicadores de ambos signos,1,0.81
+modismo_expresion,Expresion idiomatica o formula cultural,1,0.81
+lang_indice_tecnico,Valoracion numerica o indice que no expresa sentimiento,1,0.81

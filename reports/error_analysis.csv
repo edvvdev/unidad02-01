@@ -1,0 +1,125 @@
+sentence,etiqueta_real,etiqueta_predicha,nombre_real,nombre_predicho,origen,category,category_description,signals,fuera_de_dominio
+The battery life is highly unacceptable.,0,1,negativo,positivo,amazon_cells,hiperbole,Exageracion o intensificacion del juicio,highly,False
+"for 40 bucks a head, i really expect better food.",0,1,negativo,positivo,yelp,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",better,False
+I consider this theft.,0,1,negativo,positivo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,theft,False
+The Heart Attack Grill in downtown Vegas is an absolutely flat-lined excuse for a restaurant.,0,1,negativo,positivo,yelp,hiperbole,Exageracion o intensificacion del juicio,absolutely,False
+The characters were very 'stagey' and the storyline was a lot like a stage farce.,0,1,negativo,positivo,imdb,multiples_aspectos,Menciona varios aspectos evaluables del producto o del servicio,characters; story,False
+It was a pale color instead of nice and char and has NO flavor.,0,1,negativo,positivo,yelp,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",instead of,False
+The film has an ultra-cheap look to it.,0,1,negativo,positivo,imdb,formato_precios,"Menciones de precio, envio o compra",cheap,False
+"The film succeeds despite, or perhaps because of, an obviously meagre budget.",1,0,positivo,negativo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,despite,False
+Due to this happening on every call I was forced to stop using this headset.,0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,forced,False
+Think of the film being like a dream.,1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,like,False
+The only place good for this film is in the garbage.,0,1,negativo,positivo,imdb,etiqueta_discutible,Presencia simultanea de indicadores de ambos signos,positivo:good; negativo:garbage,False
+will definitely be back!,1,0,positivo,negativo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,4 palabras; sin lexico de sentimiento,False
+Their frozen margaritas are WAY too sugary for my taste.,0,1,negativo,positivo,yelp,enfasis_mayusculas,"Enfasis por mayusculas, tipico de-intensity o de rechazo",WAY,False
+I believe every one should see this movie as I think few people outside of South Africa understand its past and what is being attempted in the Truth and Reconciliation process.,1,0,positivo,negativo,imdb,duda_hedging,Incertidumbre o matiz del autor sobre su juicio,i think,False
+Plan on ordering from them again and again.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,8 palabras; sin lexico de sentimiento,False
+"The performances are real and gripping, the crocdodile is extremely well done, indeed if the Black Water website is to be believed that's because they used real crocs and the swamp location is fabulous.",1,0,positivo,negativo,imdb,hiperbole,Exageracion o intensificacion del juicio,extremely,False
+Everyone is treated equally special.,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,equally; special; treated,False
+It'll be a regular stop on my trips to Phoenix!,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,regular,False
+I've had this bluetoooth headset for some time now and still not comfortable with the way it fits on the ear.,0,1,negativo,positivo,amazon_cells,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... comfortable,False
+I went to Bachi Burger on a friend's recommendation and was not disappointed.,1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... disappointed,False
+"I have watched their prices inflate, portions get smaller and management attitudes grow rapidly!",0,1,negativo,positivo,yelp,formato_precios,"Menciones de precio, envio o compra",prices,False
+Talk about great customer service of course we will be back.,1,0,positivo,negativo,yelp,modismo_expresion,Expresion idiomatica o formula cultural,will be back,False
+"And the drinks are WEAK, people!",0,1,negativo,positivo,yelp,enfasis_mayusculas,"Enfasis por mayusculas, tipico de-intensity o de rechazo",WEAK,False
+The battery is unreliable as well as the service use antena.,0,1,negativo,positivo,amazon_cells,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",as well as,False
+You need two hands to operate the screen.This software interface is decade old and cannot compete with new software designs.,0,1,negativo,positivo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,21 palabras; sin lexico de sentimiento,False
+"This review is long overdue, since I consider A Tale of Two Sisters to be the single greatest film ever made.",1,0,positivo,negativo,imdb,experiencia_personal,Relato en primera persona con vivencia concreta,i; made,False
+You can find better movies at youtube.,0,1,negativo,positivo,imdb,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",better,False
+"The menu is always changing, food quality is going down & service is extremely slow.",0,1,negativo,positivo,yelp,hiperbole,Exageracion o intensificacion del juicio,extremely,False
+You won't be disappointed.,1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,won't ... disappointed,False
+but the movie makes a lot of serious mistakes.,0,1,negativo,positivo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+"It's like a really sexy party in your mouth, where you're outrageously flirting with the hottest person at the party.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,hottest; like; sexy,False
+I can't wait to go back.,1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,can't ... wait,False
+I really enjoyed eating here.,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,enjoyed,False
+I don't know what kind it is but they have the best iced tea.,1,0,positivo,negativo,yelp,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+We've tried to like this place but after 10+ times I think we're done with them.,0,1,negativo,positivo,yelp,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+"No shifting, no bubbling, no peeling, not even a scratch, NOTHING!I couldn't be more happier with my new one for the Droid.",1,0,positivo,negativo,amazon_cells,negacion,Negacion explicita que invierte o matiza el sentimiento,no ... not; no ... not; no ... not; not ... scratch,False
+So I bought about 10 of these and saved alot of money.,1,0,positivo,negativo,amazon_cells,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",alot,False
+The only consistent thread holding the series together were the amazing performances of Leni Parker and Anita LaSelva as the two Taelons in quiet idealogical conflict.,0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,amazing; consistent,False
+"The result is a powerhouse achievement, made more timely now perhaps because of our culture's disturbing fascination with celebrity, and it's distorted interpretations of fame.",1,0,positivo,negativo,imdb,duda_hedging,Incertidumbre o matiz del autor sobre su juicio,perhaps,False
+"As many people complained, I found this headset's microphone was very weak.",0,1,negativo,positivo,amazon_cells,experiencia_personal,Relato en primera persona con vivencia concreta,i; found,False
+great...no problems at all!.,1,0,positivo,negativo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,great,False
+This short film certainly pulls no punches.,0,1,negativo,positivo,imdb,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,7 palabras; sin lexico de sentimiento,False
+"The wontons were thin, not thick and chewy, almost melt in your mouth.",1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... chewy,False
+"I have seen many movies starring Jaclyn Smith, but my god this was one of her best, though it came out 12 years ago.",1,0,positivo,negativo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but; though,False
+"The chains, which I'm no fan of, beat this place easily.",0,1,negativo,positivo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,11 palabras; sin lexico de sentimiento,False
+Glad I didn't pay to see it.,0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,glad,False
+The scallop dish is quite appalling for value as well.,0,1,negativo,positivo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,appalling,False
+Oh and I forgot to also mention the weird color effect it has on your phone.,0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,weird,False
+But this movie really got to me.,1,0,positivo,negativo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+The last 15 minutes of movie are also not bad as well.,1,0,positivo,negativo,imdb,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... bad,False
+"Level 5 spicy was perfect, where spice didn't over-whelm the soup.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,perfect,False
+"Because both ears are occupied, background is not distracting at all.",1,0,positivo,negativo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,not,False
+They brought a fresh batch of fries and I was thinking yay something warm but no!,0,1,negativo,positivo,yelp,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+The only thing I did like was the prime rib and dessert section.,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,like,False
+The eargels channel the sound directly into your ear and seem to increase the sound volume and clarity.,1,0,positivo,negativo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,sound,False
+The menu had so much good stuff on it i could not decide!,1,0,positivo,negativo,yelp,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",stuff,False
+My phone doesn't slide around my car now and the grip prevents my phone from slipping out of my hand.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,20 palabras; sin lexico de sentimiento,False
+"You get incredibly fresh fish, prepared with care.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,fresh,False
+Gets a signal when other Verizon phones won't.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,8 palabras; sin lexico de sentimiento,False
+OMG I felt like I had never eaten Thai food until this dish.,1,0,positivo,negativo,yelp,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",omg,False
+Battery charge-life is quite long.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,6 palabras; sin lexico de sentimiento,False
+One of the few places in Phoenix that I would definately go back to again .,1,0,positivo,negativo,yelp,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",definately,False
+Anne Heche was utterly convincing.,1,0,positivo,negativo,imdb,hiperbole,Exageracion o intensificacion del juicio,utterly,False
+"There are massive levels, massive unlockable characters... it's just a massive game.",1,0,positivo,negativo,imdb,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,12 palabras; sin lexico de sentimiento,False
+This place deserves one star and 90% has to do with the food.,0,1,negativo,positivo,yelp,lang_indice_tecnico,Valoracion numerica o indice que no expresa sentimiento,one star; 90%,False
+We are sending it back.,0,1,negativo,positivo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,5 palabras; sin lexico de sentimiento,False
+The commercials are the most misleading.,0,1,negativo,positivo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,6 palabras; sin lexico de sentimiento,False
+The food wasn't good.,0,1,negativo,positivo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,wasn't ... good,False
+"Still, it was the SETS that got a big ""10"" on my ""oy-vey"" scale.",1,0,positivo,negativo,imdb,experiencia_personal,Relato en primera persona con vivencia concreta,my; got,False
+I don't think you will be disappointed.,1,0,positivo,negativo,imdb,negacion,Negacion explicita que invierte o matiza el sentimiento,don't ... disappointed,False
+The service here leaves a lot to be desired.,0,1,negativo,positivo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,desired,False
+If you haven't gone here GO NOW!,1,0,positivo,negativo,yelp,condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente",if you,True
+It was clear that she had the range and ability to pull off this part.,1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,clear,False
+Waste your money on this game.,1,0,positivo,negativo,imdb,formato_precios,"Menciones de precio, envio o compra",money,False
+I have two more years left in this contract and I hate this phone.,0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,hate,False
+The nano stated it.My son was dissapointed.,0,1,negativo,positivo,amazon_cells,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",dissapointed,False
+"Sadly, Gordon Ramsey's Steak is a place we shall sharply avoid during our next trip to Vegas.",0,1,negativo,positivo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,avoid,False
+"After one bite, I was hooked.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,hooked,False
+I've had better atmosphere.,0,1,negativo,positivo,yelp,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",better,False
+"This item worked great, but it broke after 6 months of use.",0,1,negativo,positivo,amazon_cells,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+worthless product.,0,1,negativo,positivo,amazon_cells,texto_corto,Texto demasiado corto para una inferencia fiable,2 palabras,False
+BLACK WATER is a thriller that manages to completely transcend it's limitations (it's an indie flick) by continually subverting expectations to emerge as an intense experience.,1,0,positivo,negativo,imdb,hiperbole,Exageracion o intensificacion del juicio,completely,False
+"The internet access was fine, it the rare instance that it worked.",0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,fine; worked,False
+Just reading on the specs alone makes you say WOW.,1,0,positivo,negativo,amazon_cells,enfasis_mayusculas,"Enfasis por mayusculas, tipico de-intensity o de rechazo",WOW,False
+"During several different 2 minute calls, I experienced 5 drops and it was in an area that had 5 bars.",0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,drops,False
+Go rent it.,1,0,positivo,negativo,imdb,texto_corto,Texto demasiado corto para una inferencia fiable,3 palabras,False
+The waiter wasn't helpful or friendly and rarely checked on us.,0,1,negativo,positivo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,wasn't ... helpful,False
+I can say that the desserts were yummy.,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,yummy,False
+What on earth is Irons doing in this film?,0,1,negativo,positivo,imdb,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,9 palabras; sin lexico de sentimiento,False
+It does everything the description said it would.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,8 palabras; sin lexico de sentimiento,False
+"The film deserves strong kudos for taking this stand, for having exceptional acting from its mostly lesser-known cast and for the super-intelligent script that doesn't insult the audience or take the easy way out when it comes to white racism.",1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,easy,False
+There are the usual Hitchcock logic flaws.,0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,flaws,False
+After receiving and using the product for just 2 days it broke.,0,1,negativo,positivo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,broke,False
+"Artless camera-work endlessly presents us with the ugliest setting imaginable, i.e.",0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,artless; ugliest,False
+The two main characters may be two of the most believable children I ever saw put on screen.,1,0,positivo,negativo,imdb,multiples_aspectos,Menciona varios aspectos evaluables del producto o del servicio,characters; screen,False
+"If you have several dozen or several hundred contacts, then imagine the fun of sending each of them one by one.",0,1,negativo,positivo,amazon_cells,condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente",if you,False
+I was not happy with this item.,0,1,negativo,positivo,amazon_cells,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... happy,False
+"One nice thing was that they added gratuity on the bill since our party was larger than 6 or 8, and they didn't expect more tip than that.",1,0,positivo,negativo,yelp,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",more tip than,False
+He's a national treasure.,1,0,positivo,negativo,imdb,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,4 palabras; sin lexico de sentimiento,False
+Magical Help.,1,0,positivo,negativo,amazon_cells,texto_corto,Texto demasiado corto para una inferencia fiable,2 palabras,False
+I'm so sorry but I really can't recommend it to anyone.,0,1,negativo,positivo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+"The rest of the movie lacks art, charm, meaning... If it's about emptiness, it works I guess because it's empty.",0,1,negativo,positivo,imdb,condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente","if it's about emptiness, it",False
+I struggle to find anything bad to say about it.,1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,bad,False
+""" In fact, it's hard to remember that the part of Ray Charles is being acted, and not played by the man himself.",1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,hard; not,False
+This place has a lot of promise but fails to deliver.,0,1,negativo,positivo,yelp,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+the movie is littered with overt racial slurs towards the black cast members and in return the whites are depicted as morons and boobs.,0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,boobs; morons; slurs,False
+Does everything it should and more.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,6 palabras; sin lexico de sentimiento,False
+It is shameful.,0,1,negativo,positivo,imdb,texto_corto,Texto demasiado corto para una inferencia fiable,3 palabras,False
+Filmiing was less expansive.,0,1,negativo,positivo,imdb,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,4 palabras; sin lexico de sentimiento,False
+They keep getting better and better (this is my third one and I've had numerous Palms too).,1,0,positivo,negativo,amazon_cells,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",better; better,False
+This place deserves no stars.,0,1,negativo,positivo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,5 palabras; sin lexico de sentimiento,False
+This scene is very strong and unpleasant.,0,1,negativo,positivo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,unpleasant,False
+Go watch it!,1,0,positivo,negativo,imdb,texto_corto,Texto demasiado corto para una inferencia fiable,3 palabras,False
+It is easy to turn on and off when you are in the car and the volume controls are quite accessable.,1,0,positivo,negativo,amazon_cells,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",accessable,False
+I'll definitely be in soon again.,1,0,positivo,negativo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,6 palabras; sin lexico de sentimiento,False
+It's uncomfortable and the sound quality is quite poor compared with the phone (Razr) or with my previous wired headset (that plugged into an LG).,0,1,negativo,positivo,amazon_cells,comparacion,"Comparacion explicita entre productos, peliculas o relaciones",compared with,False
+Best fish I've ever had in my life!,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,best,False
+"Yes, this film does require a rather significant amount of puzzle-solving, but the pieces fit together to create a beautiful picture.",1,0,positivo,negativo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+"Plus, it's only 8 bucks.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,plus,False
+"And there wasn't a single sour note struck acting-wise, either; some surprisingly solid casting, here.",1,0,positivo,negativo,imdb,negacion,Negacion explicita que invierte o matiza el sentimiento,wasn't ... sour,False
+"Some applause should be given to the ""prelude"" however.",1,0,positivo,negativo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,however,True
+All of the main players are mesmerising.,1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,mesmerising,False
+This fixes all the problems.,1,0,positivo,negativo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,fixes,False
+"i'm glad i found this product on amazon it is hard to find, it wasn't high priced.",1,0,positivo,negativo,amazon_cells,multiples_aspectos,Menciona varios aspectos evaluables del producto o del servicio,price; product,False

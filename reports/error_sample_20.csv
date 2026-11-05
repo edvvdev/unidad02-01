@@ -1,0 +1,21 @@
+sentence,etiqueta_real,etiqueta_predicha,nombre_real,nombre_predicho,origen,category,category_description,signals,fuera_de_dominio
+I've had this bluetoooth headset for some time now and still not comfortable with the way it fits on the ear.,0,1,negativo,positivo,amazon_cells,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... comfortable,False
+"The wontons were thin, not thick and chewy, almost melt in your mouth.",1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... chewy,False
+So I bought about 10 of these and saved alot of money.,1,0,positivo,negativo,amazon_cells,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",alot,False
+"Sadly, Gordon Ramsey's Steak is a place we shall sharply avoid during our next trip to Vegas.",0,1,negativo,positivo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,avoid,False
+The only thing I did like was the prime rib and dessert section.,1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,like,False
+"The film deserves strong kudos for taking this stand, for having exceptional acting from its mostly lesser-known cast and for the super-intelligent script that doesn't insult the audience or take the easy way out when it comes to white racism.",1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,easy,False
+My phone doesn't slide around my car now and the grip prevents my phone from slipping out of my hand.,1,0,positivo,negativo,amazon_cells,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,20 palabras; sin lexico de sentimiento,False
+This fixes all the problems.,1,0,positivo,negativo,amazon_cells,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,fixes,False
+All of the main players are mesmerising.,1,0,positivo,negativo,imdb,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,mesmerising,False
+The characters were very 'stagey' and the storyline was a lot like a stage farce.,0,1,negativo,positivo,imdb,multiples_aspectos,Menciona varios aspectos evaluables del producto o del servicio,characters; story,False
+"The menu is always changing, food quality is going down & service is extremely slow.",0,1,negativo,positivo,yelp,hiperbole,Exageracion o intensificacion del juicio,extremely,False
+"The rest of the movie lacks art, charm, meaning... If it's about emptiness, it works I guess because it's empty.",0,1,negativo,positivo,imdb,condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente","if it's about emptiness, it",False
+"The chains, which I'm no fan of, beat this place easily.",0,1,negativo,positivo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,11 palabras; sin lexico de sentimiento,False
+"If you have several dozen or several hundred contacts, then imagine the fun of sending each of them one by one.",0,1,negativo,positivo,amazon_cells,condicion_o_recomendacion,"Condicion, hipotesis o recomendacion pendiente",if you,False
+I went to Bachi Burger on a friend's recommendation and was not disappointed.,1,0,positivo,negativo,yelp,negacion,Negacion explicita que invierte o matiza el sentimiento,not ... disappointed,False
+"After one bite, I was hooked.",1,0,positivo,negativo,yelp,senal_no_cubierta,Hay senal de sentimiento pero ninguna regla la modela,hooked,False
+The only place good for this film is in the garbage.,0,1,negativo,positivo,imdb,etiqueta_discutible,Presencia simultanea de indicadores de ambos signos,positivo:good; negativo:garbage,False
+I'm so sorry but I really can't recommend it to anyone.,0,1,negativo,positivo,imdb,contraste,Contraste explicito entre una valoracion positiva y otra negativa,but,False
+will definitely be back!,1,0,positivo,negativo,yelp,hecho_sin_valoracion,Hecho objetivo sin valoracion emocional detectable,4 palabras; sin lexico de sentimiento,False
+It is easy to turn on and off when you are in the car and the volume controls are quite accessable.,1,0,positivo,negativo,amazon_cells,dialecto_registro_informal,"Registro coloquial, dialectal o grafia no estandar",accessable,False

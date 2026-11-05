@@ -1,0 +1,184 @@
+{
+  "generated_at_utc": "2026-11-05T20:56:51+00:00",
+  "dataset_path": "data/raw/dataset.csv",
+  "dataset_sha256": "6410f6b155301ad6a1cd47d90de2e44a5a82f938d4f13d500400a1eafea069fd",
+  "text_column": "sentence",
+  "target_column": "score",
+  "random_state": 42,
+  "limpieza": {
+    "filas_originales": 3000,
+    "filas_tras_quitar_nulos": 3000,
+    "textos_vacios_eliminados": 0,
+    "filas_tras_quitar_vacios": 3000,
+    "filas_duplicadas_eliminadas": 18,
+    "filas_finales": 2982
+  },
+  "particion": {
+    "semilla": 42,
+    "proporcion_prueba": 0.25,
+    "estratificada": true,
+    "filas_entrenamiento": 2236,
+    "filas_prueba": 746,
+    "distribucion_entrenamiento": {
+      "0": 1119,
+      "1": 1117
+    },
+    "distribucion_prueba": {
+      "0": 373,
+      "1": 373
+    }
+  },
+  "modelo_seleccionado": "naive_bayes",
+  "criterio_seleccion": "mayor F1 macro; desempate por accuracy",
+  "modelos": {
+    "dummy": {
+      "modelo": "dummy",
+      "nombre": "DummyClassifier (linea base)",
+      "f1_macro": 0.3333333333333333,
+      "accuracy": 0.5,
+      "precision_macro": 0.25,
+      "recall_macro": 0.5,
+      "por_clase": {
+        "0": {
+          "nombre": "negativo",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 373
+        },
+        "1": {
+          "nombre": "positivo",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 373
+        }
+      },
+      "matriz_confusion": [
+        [
+          373,
+          0
+        ],
+        [
+          373,
+          0
+        ]
+      ],
+      "etiquetas": [
+        "0",
+        "1"
+      ],
+      "support_test": 746
+    },
+    "naive_bayes": {
+      "modelo": "naive_bayes",
+      "nombre": "Complement Naive Bayes",
+      "f1_macro": 0.8337371398992042,
+      "accuracy": 0.8337801608579088,
+      "precision_macro": 0.8341259848185056,
+      "recall_macro": 0.8337801608579088,
+      "por_clase": {
+        "0": {
+          "nombre": "negativo",
+          "precision": 0.8233766233766234,
+          "recall": 0.8498659517426274,
+          "f1": 0.8364116094986808,
+          "support": 373
+        },
+        "1": {
+          "nombre": "positivo",
+          "precision": 0.8448753462603878,
+          "recall": 0.8176943699731903,
+          "f1": 0.8310626702997275,
+          "support": 373
+        }
+      },
+      "matriz_confusion": [
+        [
+          317,
+          56
+        ],
+        [
+          68,
+          305
+        ]
+      ],
+      "etiquetas": [
+        "0",
+        "1"
+      ],
+      "support_test": 746
+    },
+    "logistic": {
+      "modelo": "logistic",
+      "nombre": "Regresion logistica con TF-IDF",
+      "f1_macro": 0.8136699089139938,
+      "accuracy": 0.8136729222520107,
+      "precision_macro": 0.8136932144910869,
+      "recall_macro": 0.8136729222520107,
+      "por_clase": {
+        "0": {
+          "nombre": "negativo",
+          "precision": 0.8111702127659575,
+          "recall": 0.8176943699731903,
+          "f1": 0.8144192256341789,
+          "support": 373
+        },
+        "1": {
+          "nombre": "positivo",
+          "precision": 0.8162162162162162,
+          "recall": 0.8096514745308311,
+          "f1": 0.8129205921938089,
+          "support": 373
+        }
+      },
+      "matriz_confusion": [
+        [
+          305,
+          68
+        ],
+        [
+          71,
+          302
+        ]
+      ],
+      "etiquetas": [
+        "0",
+        "1"
+      ],
+      "support_test": 746
+    }
+  },
+  "tabla": [
+    {
+      "modelo": "naive_bayes",
+      "nombre": "Complement Naive Bayes",
+      "f1_macro": 0.833737,
+      "accuracy": 0.83378,
+      "precision_macro": 0.834126,
+      "recall_macro": 0.83378,
+      "filas_prueba": 746,
+      "seleccionado": true
+    },
+    {
+      "modelo": "logistic",
+      "nombre": "Regresion logistica con TF-IDF",
+      "f1_macro": 0.81367,
+      "accuracy": 0.813673,
+      "precision_macro": 0.813693,
+      "recall_macro": 0.813673,
+      "filas_prueba": 746,
+      "seleccionado": false
+    },
+    {
+      "modelo": "dummy",
+      "nombre": "DummyClassifier (linea base)",
+      "f1_macro": 0.333333,
+      "accuracy": 0.5,
+      "precision_macro": 0.25,
+      "recall_macro": 0.5,
+      "filas_prueba": 746,
+      "seleccionado": false
+    }
+  ]
+}
