@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-11-06T00:22:06+00:00",
+  "candidato_aprobado": {
+    "nombre": "Sentiment Labelled Sentences (UCI 331)",
+    "url": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+    "licencia": "CC BY 4.0",
+    "filas": 3000,
+    "clases": 2,
+    "distribucion_clases": {
+      "0": 1500,
+      "1": 1500
+    },
+    "duplicados_exactos": 18,
+    "filas_con_7_mas_digitos": 0,
+    "filas_con_url": 0,
+    "filas_con_direccion_correo": 0,
+    "riesgo_datos_personales": "nulo: 0 filas con URL, 0 con direccion de correo y 0 con 7+ digitos"
+  },
+  "candidato_descartado": {
+    "nombre": "SMS Spam Collection (UCI 228)",
+    "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+    "licencia": "CC BY 4.0",
+    "archivo": "data/raw/sms_spam_collection.zip",
+    "archivo_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "filas": 5574,
+    "ham": 4827,
+    "spam": 747,
+    "spam_pct": 13.4,
+    "duplicados_exactos": 403,
+    "filas_con_7_mas_digitos": 419,
+    "filas_con_url": 108,
+    "filas_con_direccion_correo": 7,
+    "filas_con_url_o_correo": 113,
+    "filas_con_simbolo_arroba": 36,
+    "filas_con_url_o_arroba": 141,
+    "verificado_en": "2026-11-06",
+    "recalculado": true
+  }
+}

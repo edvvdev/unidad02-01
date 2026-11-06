@@ -1,7 +1,9 @@
 {
-  "generated_at_utc": "2026-11-05T20:42:20+00:00",
+  "generated_at_utc": "2026-11-06T00:22:05+00:00",
   "dataset_path": "data/raw/dataset.csv",
   "dataset_sha256": "6410f6b155301ad6a1cd47d90de2e44a5a82f938d4f13d500400a1eafea069fd",
+  "archive_path": "data/raw/dataset.zip",
+  "archive_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
   "rows": 3000,
   "columns": [
     "sentence",

@@ -34,10 +34,15 @@ def build_summary(df: pd.DataFrame) -> dict:
     classes = df[target_column].value_counts(dropna=False)
     duplicates = duplicate_report(df, text_column, target_column, "source")
     normalized = normalize_text_key(text)
+    archive_path = settings.dataset_path.parent / "dataset.zip"
     summary = {
         "generated_at_utc": datetime.now(UTC).isoformat(timespec="seconds"),
         "dataset_path": str(settings.dataset_path.relative_to(ROOT)),
         "dataset_sha256": sha256(settings.dataset_path),
+        "archive_path": (
+            str(archive_path.relative_to(ROOT)) if archive_path.exists() else None
+        ),
+        "archive_sha256": sha256(archive_path) if archive_path.exists() else None,
         "rows": len(df),
         "columns": list(df.columns),
         "dtypes": {column: str(dtype) for column, dtype in df.dtypes.items()},

@@ -1,0 +1,46 @@
+{
+  "generated_at_utc": "2026-11-06T00:22:06+00:00",
+  "archivo": "data/raw/dataset.zip",
+  "archivo_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
+  "regla_de_lectura_aplicada": "corte de linea solo por \\n y separacion de cada linea por su ULTIMO tabulador",
+  "lectora_ingenuo": "pandas.read_csv(sep=comma, header=None, on_bad_lines=skip): interpreta las comillas dobles del texto como delimitadores y descarta las lineas que no encajan",
+  "por_fuente": {
+    "imdb": {
+      "lineas_logicas": 1000,
+      "recuperadas_ultimo_tabulador": 1000,
+      "leidas_csv_ingenuo_coma": 739,
+      "perdidas_csv_ingenuo_coma": 261,
+      "leidas_csv_ingenuo_tabulador": 748,
+      "perdidas_csv_ingenuo_tabulador": 252
+    },
+    "amazon_cells": {
+      "lineas_logicas": 1000,
+      "recuperadas_ultimo_tabulador": 1000,
+      "leidas_csv_ingenuo_coma": 775,
+      "perdidas_csv_ingenuo_coma": 225,
+      "leidas_csv_ingenuo_tabulador": 1000,
+      "perdidas_csv_ingenuo_tabulador": 0
+    },
+    "yelp": {
+      "lineas_logicas": 1000,
+      "recuperadas_ultimo_tabulador": 1000,
+      "leidas_csv_ingenuo_coma": 706,
+      "perdidas_csv_ingenuo_coma": 294,
+      "leidas_csv_ingenuo_tabulador": 1000,
+      "perdidas_csv_ingenuo_tabulador": 0
+    }
+  },
+  "totales": {
+    "lineas_logicas": 3000,
+    "recuperadas_ultimo_tabulador": 3000,
+    "leidas_csv_ingenuo_coma": 2220,
+    "leidas_csv_ingenuo_tabulador": 2748,
+    "perdidas_csv_ingenuo_coma": 780,
+    "perdidas_csv_ingenuo_tabulador": 252
+  },
+  "caracteres_especiales": {
+    "u0085": 2,
+    "u2028": 0,
+    "u2029": 0
+  }
+}
