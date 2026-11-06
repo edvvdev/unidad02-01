@@ -70,12 +70,15 @@ def plot_confusion(result, path):
     matrix = pd.DataFrame(
         metrics["matriz_confusion"], index=labels, columns=labels
     )
-    figure, axis = plt.subplots(figsize=(6, 5))
+    figure, axis = plt.subplots(figsize=(7.6, 5.4))
     display = ConfusionMatrixDisplay(confusion_matrix=matrix.values, display_labels=labels)
     display.plot(ax=axis, cmap="Blues", values_format="d")
-    axis.set_title(f"Matriz de confusion · {metrics['nombre']} (F1 macro={metrics['f1_macro']:.3f})")
+    axis.set_title(
+        f"Matriz de confusión · {metrics['nombre']} (F1 macro={metrics['f1_macro']:.3f})",
+        fontsize=11,
+    )
     figure.tight_layout()
-    figure.savefig(path, dpi=170)
+    figure.savefig(path, dpi=170, bbox_inches="tight")
     return figure
 
 
@@ -87,7 +90,7 @@ def plot_models_comparison(result, path):
     bars = axis.bar(names, scores, color=colors)
     axis.set_ylabel("F1 macro")
     axis.set_ylim(0, 1)
-    axis.set_title("Comparacion de pipelines (mismo preprocesamiento y misma particion)")
+    axis.set_title("Comparación de pipelines (mismo preprocesamiento y misma partición)")
     axis.axhline(
         result.metrics["dummy"]["f1_macro"], color="#e76f51", linestyle="--", linewidth=1,
         label="Linea base (DummyClassifier)",
@@ -110,7 +113,7 @@ def plot_errors_by_category(summary, path):
         axis.text(bar.get_width() + 0.4, bar.get_y() + bar.get_height() / 2, str(value),
                   va="center", fontsize=8)
     axis.set_xlabel("Errores")
-    axis.set_title("Reparto de errores por categoria (modelo seleccionado)")
+    axis.set_title("Reparto de errores por categoría (modelo seleccionado)")
     axis.grid(axis="x", alpha=0.3)
     figure.tight_layout()
     figure.savefig(path, dpi=170)

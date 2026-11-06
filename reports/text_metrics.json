@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T20:56:51+00:00",
+  "generated_at_utc": "2026-11-06T00:30:40+00:00",
   "dataset_path": "data/raw/dataset.csv",
   "dataset_sha256": "6410f6b155301ad6a1cd47d90de2e44a5a82f938d4f13d500400a1eafea069fd",
   "text_column": "sentence",
@@ -33,7 +33,7 @@
   "modelos": {
     "dummy": {
       "modelo": "dummy",
-      "nombre": "DummyClassifier (linea base)",
+      "nombre": "Línea base (DummyClassifier)",
       "f1_macro": 0.3333333333333333,
       "accuracy": 0.5,
       "precision_macro": 0.25,
@@ -111,7 +111,7 @@
     },
     "logistic": {
       "modelo": "logistic",
-      "nombre": "Regresion logistica con TF-IDF",
+      "nombre": "Regresión logística con TF-IDF",
       "f1_macro": 0.8136699089139938,
       "accuracy": 0.8136729222520107,
       "precision_macro": 0.8136932144910869,
@@ -162,7 +162,7 @@
     },
     {
       "modelo": "logistic",
-      "nombre": "Regresion logistica con TF-IDF",
+      "nombre": "Regresión logística con TF-IDF",
       "f1_macro": 0.81367,
       "accuracy": 0.813673,
       "precision_macro": 0.813693,
@@ -172,7 +172,7 @@
     },
     {
       "modelo": "dummy",
-      "nombre": "DummyClassifier (linea base)",
+      "nombre": "Línea base (DummyClassifier)",
       "f1_macro": 0.333333,
       "accuracy": 0.5,
       "precision_macro": 0.25,

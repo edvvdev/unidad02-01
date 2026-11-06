@@ -9,9 +9,9 @@ from sklearn.pipeline import Pipeline
 TARGET_LABEL_NAMES = {"0": "negativo", "1": "positivo"}
 
 MODEL_LABELS = {
-    "dummy": "DummyClassifier (linea base)",
+    "dummy": "Línea base (DummyClassifier)",
     "naive_bayes": "Complement Naive Bayes",
-    "logistic": "Regresion logistica con TF-IDF",
+    "logistic": "Regresión logística con TF-IDF",
 }
 
 
