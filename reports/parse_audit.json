@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-06T00:22:06+00:00",
+  "generated_at_utc": "2026-11-06T01:26:51+00:00",
   "archivo": "data/raw/dataset.zip",
   "archivo_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
   "regla_de_lectura_aplicada": "corte de linea solo por \\n y separacion de cada linea por su ULTIMO tabulador",
