@@ -8,3 +8,6 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Export HTML del notebook (no se versiona)
+*.html
