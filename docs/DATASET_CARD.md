@@ -73,13 +73,23 @@ Un lector CSV ingenuo habría reducido el corpus de forma silenciosa:
 | Lectura | Filas obtenidas de 3.000 | Pérdida |
 |---|---|---|
 | `pd.read_csv(..., sep=",")` | error de parseo (`ParserError`) | — |
-| `pd.read_csv(..., sep=",")` con `on_bad_lines="warn"` | 2.220 | 780 filas |
+| `pd.read_csv(..., sep=",")` con `on_bad_lines="warn"` | 2.220 | 780 filas (261 de IMDb, 225 de Amazon, 294 de Yelp) |
 | `pd.read_csv(..., sep="\t")` (lector por defecto con comillas) | 2.748 | 252 filas, todas de IMDb |
 | `split("\n")` + separación por el último tabulador (implementación propia) | **3.000** | **0** |
 
 La pérdida de 252 filas en el archivo de IMDb coincide exactamente con el
 número indicado en el enunciado del ejercicio y se verificó sobre el archivo
 descargado.
+
+El total de **780 filas** que pierde el lector de CSV ingenuo se desglosa así:
+**261** de las 1.000 filas de IMDb, **225** de las 1.000 de Amazon y **294** de
+las 1.000 de Yelp. Las dos causas son las comillas dobles del texto de IMDb
+(el lector las toma como delimitadores y descarta la fila) y los dos
+caracteres U+0085 (NEXT LINE) incrustados en frases de IMDb, que el lector
+CSV no sabe interpretar. La extracción correcta (corte solo por `\n` y
+separación por el último tabulador) recupera las 3.000 filas. El desglose por
+fuente se calcula en `scripts/audit_candidates.py` y queda en
+`reports/parse_audit.json`.
 
 ## Diccionario de datos
 

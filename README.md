@@ -1,10 +1,16 @@
-# INF-8239 Ciencia de Datos II · Unidad 02 · Ejercicio 01 (LAB04 + LAB05)
+# INF-8239 Ciencia de Datos II · Unidad 02 · Ejercicio 03 (LAB04 + LAB05)
 
 **Estudiante:** Edwing Perez  
 **Repositorio de entrega:** https://github.com/edvvdev/unidad02-01  
 **Unidad:** 02 · Procesamiento de Lenguaje Natural, redes y visión
 
-Este proyecto resuelve el **Ejercicio 01 de la Unidad 02**: seleccionar, aprobar,
+> **Nota sobre el nombre del ejercicio.** El mandato de la unidad numera este
+> trabajo como **Ejercicio 03** (LAB04 + LAB05). En el repositorio y en el PDF
+> aparece como **Ejercicio 01** por orden de entrega dentro de la unidad: es el
+> mismo trabajo, con el mismo contenido.
+
+Este proyecto resuelve el **Ejercicio 03 de la Unidad 02** (el Ejercicio 01 del
+repositorio): seleccionar, aprobar,
 descargar y auditar un corpus público de texto (LAB04) y, sobre ese corpus,
 entrenar y evaluar tres clasificadores de sentimiento, analizar sus errores y
 publicar una aplicación local reproducible (LAB05).
@@ -82,6 +88,23 @@ escribe:
 | `reports/audit_table.csv` | una fila por columna (tipo, nulos, únicos, ejemplo) |
 | `reports/audit_duplicates.csv` | textos duplicados con conteo y etiquetas |
 
+## 5.1 Formato crudo y candidatos comparados
+
+```bash
+uv run python scripts/audit_candidates.py
+```
+
+Comprueba el archivo crudo aprobado y las cifras verificadas del candidato
+descartado, y escribe:
+
+| Artefacto | Contenido |
+|---|---|
+| `reports/parse_audit.json` | filas que pierde un lector CSV ingenuo en cada origen, caracteres U+0085 y filas recuperadas por la regla aplicada |
+| `reports/candidates_audit.json` | cifras verificadas de los dos candidatos (filas, clases, duplicados y señales de datos personales) |
+
+Todas las cifras del README, del PDF y del notebook salen de `reports/`: ningún
+documento las escribe a mano.
+
 ## 6. Entrenamiento y evaluación (LAB05)
 
 ```bash
@@ -154,9 +177,10 @@ bash scripts/run_all.sh              # Linux / macOS
 powershell -ExecutionPolicy Bypass -File scripts\run_all.ps1   # Windows
 ```
 
-El script hace: `.env` → `uv sync` → descarga → auditoría → entrenamiento →
-notebook ejecutado → PDF → pruebas. En un clon limpio termina sin errores y
-regenera `reports/`, `models/` y `docs/EJERCICIO_01_PDF_BRIEF.pdf`.
+El script hace: `.env` → `uv sync` → descarga → auditoría → auditoría del
+formato crudo y de los candidatos → entrenamiento → notebook ejecutado → PDF →
+pruebas. En un clon limpio termina sin errores y regenera `reports/`,
+`models/` y `docs/EJERCICIO_01_PDF_BRIEF.pdf`.
 
 ## 11. Pruebas
 
@@ -209,7 +233,7 @@ categorías de reglas léxicas transparentes (17 con al menos un caso):
 | `hiperbole` | 6 | 4,84 |
 | `dialecto_registro_informal` | 6 | 4,84 |
 | `texto_corto` | 5 | 4,03 |
-| las 13 restantes | 20 | 16,13 |
+| las 9 restantes | 20 | 16,13 |
 
 > Cada cifra de esta tabla procede de `reports/text_metrics.json` y
 > `reports/errors_by_category.csv`, y es la misma que muestra el PDF.
@@ -237,11 +261,15 @@ Comparación con el candidato descartado: **`docs/dataset_candidates.csv`**.
 ### Hallazgo sobre los datos crudos
 
 El archivo de IMDb contiene comillas dobles dentro del texto y **dos
-caracteres U+0085 (NEXT LINE)** dentro de frases. Un lector CSV ingenuo pierde
-**252 de las 1.000 filas de IMDb** (780 de 3.000 con separador coma) y
+caracteres U+0085 (NEXT LINE)** dentro de frases. Un lector CSV ingenuo con
+separador coma pierde **261 de las 1.000 filas de IMDb**, **225 de las 1.000 de
+Amazon** y **294 de las 1.000 de Yelp**: **780 de las 3.000 filas** del corpus.
+Con separador tabulador se pierden **252 de las 1.000 filas de IMDb** y
 `str.splitlines()` deja dos registros sin etiqueta. La implementación de
 `src/inf8239_u02/data.py` corta el archivo solo por `\n` y separa cada línea
-por su **último tabulador**, y recupera las 3.000 filas completas.
+por su **último tabulador**, y con esa regla recupera las **3.000 filas**
+completas. El desglose por fuente y el total se calculan en
+`scripts/audit_candidates.py` y quedan en `reports/parse_audit.json`.
 
 ## 14. Estructura del proyecto
 
@@ -262,6 +290,8 @@ por su **último tabulador**, y recupera las 3.000 filas completas.
 │   ├── audit_summary.json             Auditoría numérica
 │   ├── audit_table.csv                Auditoría por columna
 │   ├── audit_duplicates.csv           Auditoría de duplicados
+│   ├── parse_audit.json               Formato crudo: pérdidas del lector CSV ingenuo
+│   ├── candidates_audit.json          Cifras verificadas de los dos candidatos
 │   ├── audit_overview.png             Longitud de frases y clases
 │   ├── text_metrics.csv / .json       Métricas globales y por clase
 │   ├── confusion_text.png             Matriz de confusión
@@ -273,6 +303,7 @@ por su **último tabulador**, y recupera las 3.000 filas completas.
 ├── scripts/
 │   ├── download_data.py               Descarga verificada y normalización
 │   ├── audit_data.py                  Auditoría
+│   ├── audit_candidates.py            Formato crudo del corpus y cifras de los candidatos
 │   ├── train_text.py                  Entrenamiento, métricas y análisis de errores
 │   ├── build_ejercicio01_pdf.py       Generador del PDF breve
 │   ├── run_all.sh / run_all.ps1       Pipeline completo

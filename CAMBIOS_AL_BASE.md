@@ -27,11 +27,13 @@ entorno dejara de ser reproducible entre ejecuciones.
 |---|---|
 | `src/inf8239_u02/experiment.py` | Experimento reproducible: limpieza, partición estratificada, entrenamiento de los tres pipelines, métricas por clase y selección del mejor modelo por F1 macro. Lo usan **el script y el notebook**, de modo que ambos caminos dan el mismo resultado. |
 | `src/inf8239_u02/errors.py` | Taxonomía de 20 categorías de error con reglas léxicas transparentes. Cada error recibe una categoría y las **señales** que la activaron. Sin aprendizaje automático: las reglas son revisables. |
-| `scripts/build_ejercicio01_pdf.py` | Genera `docs/EJERCICIO_01_PDF_BRIEF.pdf` leyendo todas las cifras de `reports/`. El enlace al repositorio se toma de `REPO_URL`. |
-| `scripts/run_all.sh` | Pipeline completo en Linux/macOS: `.env` → `uv sync` → descarga → auditoría → entrenamiento → notebook → PDF → pruebas. |
+| `scripts/audit_candidates.py` | Audita el **formato crudo** del corpus aprobado (cuántas filas pierde un lector CSV ingenuo en cada origen, cuántos caracteres U+0085 hay y cuántas filas recupera la regla aplicada) y recalcula las cifras verificadas de los dos candidatos. Escribe `reports/parse_audit.json` y `reports/candidates_audit.json`. |
+| `scripts/build_ejercicio01_pdf.py` | Genera `docs/EJERCICIO_01_PDF_BRIEF.pdf` leyendo todas las cifras de `reports/` y de `docs/dataset_candidates.csv`: el generador no contiene ninguna cifra escrita a mano. El enlace al repositorio se toma de `REPO_URL`. |
+| `scripts/run_all.sh` | Pipeline completo en Linux/macOS: `.env` → `uv sync` → descarga → auditoría → auditoría del formato crudo y de los candidatos → entrenamiento → notebook → PDF → pruebas. |
 | `scripts/run_all.ps1` | Equivalente para Windows PowerShell. |
 | `notebooks/01_ejercicio01_nlp.ipynb` | Notebook **ejecutado** con salidas y figuras: auditoría → comparación de candidatos → comparación de modelos → métricas por clase → matriz de confusión → 20 errores con interpretación manual → conclusiones. |
 | `tests/test_errors.py` | Pruebas de la taxonomía de errores (20 categorías, detección de negación/ironía/contraste, determinismo, reparto porcentual). |
+| `tests/test_audit_candidates.py` | Pruebas del desglose de filas perdidas por el lector CSV ingenuo (261 de IMDb, 225 de Amazon, 294 de Yelp; 780 en total), de la recuperación completa con la regla aplicada, de los dos caracteres U+0085 y de las cifras verificadas de los dos candidatos. |
 | `docs/EJERCICIO_01_PDF_BRIEF.pdf` | PDF breve de entrega (6 páginas). |
 | `AI_USE_DECLARATION.md` | Declaración de uso de IA con prompts, verificaciones y correcciones. |
 | `CAMBIOS_AL_BASE.md` | Este documento. |
@@ -66,7 +68,26 @@ entorno dejara de ser reproducible entre ejecuciones.
 | Configuración de datos | Muestra `demo_text.csv` | Corpus público real con hash | La muestra del base solo sirve para comprobar la arquitectura. |
 | Artefactos de auditoría | Solo salida por consola | JSON + 2 CSV en `reports/` | Sin artefactos no hay evidencia verificable ni cifras respaldadas. |
 
-## 4. Elementos no incluidos y por qué
+## 4. Segunda ronda de correcciones (2026-11-06)
+
+Correcciones sobre la entrega ya publicada, todas verificadas ejecutando el
+código del repositorio.
+
+| # | Defecto | Corrección | Evidencia |
+|---|---|---|---|
+| 1 | La figura `reports/audit_overview.png` etiquetaba las dos clases como "negativo" (`clave == '1' and 'positivo' or 'negativo'` compara un `numpy.int64` con una cadena y siempre es `False`). | Etiquetado por mapeo de valor de clase (`{0: "negativo", 1: "positivo"}`) en la celda que genera la figura. | La figura publicada muestra `1 (positivo)`; `notebooks/01_ejercicio01_nlp.ipynb` regenerada. |
+| 2 | El desglose por fuente del hallazgo del formato crudo era falso (53 de Amazon y 70 de Yelp). | `scripts/audit_candidates.py` reproduce la pérdida del lector CSV ingenuo archivo por archivo: **261 de IMDb, 225 de Amazon y 294 de Yelp, 780 de 3.000 en total**, y explica que las comillas del archivo de IMDb y los caracteres U+0085 son la causa. | `reports/parse_audit.json`; README, `docs/DATASET_CARD.md` y PDF actualizados. |
+| 3 | `README.md` decía "las 13 restantes" con 17 categorías activadas y 8 listadas. | "las 9 restantes" (20 errores). | `reports/errors_by_category.csv`. |
+| 4 | La declaración afirmaba que no había ninguna cifra escrita a mano en el generador del PDF, pero el generador tenía literales numéricos. | El generador lee ahora `reports/*.json`, `reports/*.csv` y `docs/dataset_candidates.csv`: no queda ninguna cifra escrita a mano. La afirmación de la declaración se reescribió con precisión. | `scripts/build_ejercicio01_pdf.py`. |
+| 5 | Erratas en `AI_USE_DECLARATION.md` ("wrote archivos", "El scriptinformed", "La IA proposes"). | Corregidas y revisado el archivo entero en busca de texto corrupto o no latino. | `grep` de rangos CJK sin resultados. |
+| 6 | El título de `reports/confusion_text.png` quedaba pegado al borde y se recortaba la "M" inicial. | Figura más ancha, título con tamaño de fuente explícito y guardado con `bbox_inches="tight"`. | `reports/confusion_text.png` regenerado y revisado. |
+| 7 | El PDF se publicaba sin tildes ("Conclusion", "Analisis de errores", "Regresion logistica", "Metricas por clase"). | Todo el texto del generador va con tildes y los nombres de los modelos llevan acentos en `src/inf8239_u02/modeling.py`. | `pdftotext` del PDF regenerado. |
+| 8 | El PDF repetía la misma URL en dos filas ("Repositorio" y "Repositorio del enunciado"). | Una sola fila de repositorio. | `pdftotext` del PDF regenerado. |
+| 9 | El mandato llama a este trabajo "Ejercicio 03" y el repositorio lo llama "Ejercicio 01". | Nota aclaratoria en el README, en la portada del PDF y en la declaración de IA. | README y PDF. |
+| 10 | El árbol git tenía un export HTML del notebook sin versionar. | `*.html` añadido a `.gitignore`; el export se conserva en local pero no se versiona. | `git status --short`. |
+| 11 | El candidato descartado publicaba "140 con URL o correo", cifra que no se reproduce con ninguna definición comprobable. | `scripts/audit_candidates.py` calcula 113 filas con URL o dirección de correo y 141 si se cuenta cualquier mensaje con un símbolo `@`; el PDF y la documentación usan esas cifras. | `reports/candidates_audit.json`. |
+
+## 5. Elementos no incluidos y por qué
 
 | Elemento | Motivo |
 |---|---|
