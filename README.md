@@ -188,7 +188,7 @@ pruebas. En un clon limpio termina sin errores y regenera `reports/`,
 uv run pytest -q
 ```
 
-32 pruebas cubren el contrato de datos (columnas reales, ≥500 filas, 2 clases,
+37 pruebas cubren el contrato de datos (columnas reales, ≥500 filas, 2 clases,
 sin nulos ni textos vacíos, hash coherente con la auditoría, duplicados
 declarados), la presencia del vectorizador dentro del pipeline, la
 selección del mejor modelo por F1 macro, la coherencia de la matriz de

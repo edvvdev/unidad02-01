@@ -112,7 +112,7 @@ literales que determinaron el resultado:
       `reports/error_sample_20_reviewed.csv` se leyeron uno por uno y la
       interpretación manual de cada caso se escribió leyendo el texto real
       (no se copiaron plantillas).
-- [x] **Pruebas:** `uv run pytest -q` en verde (32 pruebas) antes de publicar.
+- [x] **Pruebas:** `uv run pytest -q` en verde (37 pruebas) antes de publicar.
 - [x] **Clon limpio:** se clonó el repositorio en `/tmp` y se ejecutó
       `scripts/run_all.sh` completo, sin errores.
 - [x] **Enlaces y licencias:** las dos fichas de UCI, sus licencias CC BY 4.0
